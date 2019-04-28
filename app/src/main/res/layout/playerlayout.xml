@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+                android:id="@+id/playerText"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/buttons"
+                app:layout_constraintEnd_toEndOf="@+id/buttons"
+                app:layout_constraintStart_toStartOf="@+id/buttons"
+                android:layout_marginLeft="8dp">
+
+            <TextView
+                    android:id="@+id/playerName"
+                    android:text="Player"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/playerHealth"
+                    android:text="Health"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/buttons"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp">
+
+            <Button
+                    android:id="@+id/plusOne"
+                    android:text="+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/plusFive"
+                    android:text="+5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/minusOne"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/minusFive"
+                    android:text="-5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
